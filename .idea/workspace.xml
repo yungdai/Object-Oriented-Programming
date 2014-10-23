@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc292163-7571-450e-a4d3-a10201e93dce" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Object Oriented Programming.iml" afterPath="$PROJECT_DIR$/.idea/Object Oriented Programming.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/people.rb" afterPath="$PROJECT_DIR$/people.rb" />
     </list>
     <ignored path="Object Oriented Programming.iws" />
@@ -14,6 +15,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Object Oriented Programming@people.coverage" NAME="people Coverage Results" MODIFIED="1414087588099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Object Oriented Programming" />
     <SUITE FILE_PATH="coverage/Object Oriented Programming@Test_Code.coverage" NAME="Test Code Coverage Results" MODIFIED="1414085063112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Object Oriented Programming" />
     <SUITE FILE_PATH="coverage/Object Oriented Programming@point.coverage" NAME="point Coverage Results" MODIFIED="1414081705214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Object Oriented Programming" />
   </component>
@@ -52,8 +54,8 @@
       <file leaf-file-name="people.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/people.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7477341" vertical-offset="0" max-vertical-offset="662">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8383686" vertical-offset="0" max-vertical-offset="720">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -142,7 +144,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
   </component>
-  <component name="RunManager" selected="Ruby.Test Code">
+  <component name="RunManager" selected="Ruby.people">
     <configuration default="false" name="point" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Object Oriented Programming" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -182,6 +184,28 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Test Code.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="people" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="Object Oriented Programming" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/people.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
@@ -270,14 +294,16 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Ruby.point" />
       <item index="1" class="java.lang.String" itemvalue="Ruby.Test Code" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.people" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.Test Code" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.point" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Ruby.people" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.Test Code" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.point" />
       </list>
     </recent_temporary>
   </component>
@@ -355,8 +381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/people.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7477341" vertical-offset="0" max-vertical-offset="662">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8383686" vertical-offset="0" max-vertical-offset="720">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="82" />
           <folding />
         </state>
       </provider>
