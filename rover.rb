@@ -3,16 +3,16 @@ class Rover
   attr_accessor :x, :y, :direction
 
   # initialize the state of the Rover
-  def initialize(x, y, direction)
-    @x = x.to_i
-    @y = y.to_i
-    @direction = direction.to_s
+  def initialize(x, y, direction, plateau_, plateau_y)
+    @x = x
+    @y = y
+    @direction = direction
   end
+
   # method for reading instructions
   def read_instructions(instructions)
     # do loop that takes each character from the instructions and then exectue the move
     instructions.each_char do |instruction|
-      position
       if instruction == "M"
         move_forward
       elsif instruction == "L"
@@ -27,7 +27,7 @@ class Rover
 
   #  This is the expected formatted output
   def position
-    puts "The Rover's current position is X=#{@x}, y= #{@y},facing #{@direction}"
+    puts "The Rover's current position is x=#{@x}, y= #{@y},facing #{@direction}"
   end
 
   # Instructions to tell the Rover how to move
@@ -38,7 +38,7 @@ class Rover
       @direction = "S"
     elsif @direction == "S"
       @direction = "E"
-    else
+    elsif @direction == "E"
       @direction = "N"
     end
   end
@@ -49,8 +49,8 @@ class Rover
     elsif @direction == "E"
       @direction = "S"
     elsif @direction == "S"
-      @direciton = "W"
-    else
+      @direction = "W"
+    elsif @direction == "W"
       @direction = "N"
     end
   end
@@ -60,9 +60,9 @@ class Rover
       @y += 1
     elsif @direction == "E"
       @x += 1
-    elsif @direciton == "S"
+    elsif @direction == "S"
       @y -= 1
-    else
+    elsif @direction == "W"
       @x -= 1
     end
   end
@@ -71,10 +71,12 @@ class Rover
 end
 
 
-rover1 = Rover.new(1, 2, "N")
+#Rover 1 instructions:
+rover1 = Rover.new(1, 2, "N", 5, 5)
 rover1.read_instructions("LMLMLMLMM")
 rover1.position
 
-rover2 = Rover.new(3, 3, "E")
+#Rover 2 instructions:
+rover2 = Rover.new(3, 3, "E", 5, 5)
 rover2.read_instructions("MMRMMRMRRM")
 rover2.position
