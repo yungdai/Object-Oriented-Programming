@@ -8,5 +8,9 @@ class Student
 end
 
 class Instructor
-
+  # 3. The instructor class has a method called teach that outputs "Everything in Ruby
+  # is an Object".
+  def teach
+    puts "Everything in Ruby is an Object"
+  end
 end
