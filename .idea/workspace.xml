@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc292163-7571-450e-a4d3-a10201e93dce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test Code.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/point.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Object Oriented Programming.iml" afterPath="$PROJECT_DIR$/.idea/Object Oriented Programming.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/people.rb" afterPath="$PROJECT_DIR$/people.rb" />
     </list>
     <ignored path="Object Oriented Programming.iws" />
     <ignored path=".idea/workspace.xml" />
