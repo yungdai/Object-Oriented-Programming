@@ -33,12 +33,32 @@ class Instructor < Person
   end
 end
 
-
-
-# 6. Create an instance of Instructor whose name is "Chris" and call his greeting.
+puts "6. Create an instance of Instructor whose name is 'Chris' and call his greeting."
 chris = Instructor.new("Chris")
 chris.teach
+puts ""
 
-# 7. Create an instance of Student whose name is "Cristina" and call her greeting.
+puts "7. Create an instance of Student whose name is 'Cristina' and call her greeting."
 christina = Student.new("Christina")
 christina.learn
+puts ""
+
+# 8. Call the teach method on your instructor instance and call the learn method on your
+# student. Next, call the teach method on your student instance. What happens? Why doesn't
+# that work? Leave a comment in your program explaining why.
+puts "Calling Chris' name and Greeting"
+chris.greeting
+chris.teach
+
+# The chris.Instructor Object has inherited the Parent Class Person with the name
+# attribute, and the greeting method within that parent object.  The child object has
+# a new attribute called teach which chris can call.
+
+puts ""
+puts "Calling Christina's name and Greeting"
+christina.greeting
+christina.learn
+
+# christina.teach
+# christina.teach doesn't work, because christina is an instanace of the Student object
+# and not the Teach object.
