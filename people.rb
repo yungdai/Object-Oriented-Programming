@@ -23,4 +23,14 @@ class Person
   def initialize(name)
     @name = name
   end
+
+  # 5. Both the instructor and the student should also be able to do a greeting, like "Hi,
+  # my name is #{name}". Where's the best place to put this common method?
+
+  def greeting
+    puts "Hi, my name is #{name}."
+  end
 end
+
+
+
