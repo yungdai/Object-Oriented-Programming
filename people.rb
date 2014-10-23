@@ -39,4 +39,6 @@ end
 chris = Instructor.new("Chris")
 chris.teach
 
-
+# 7. Create an instance of Student whose name is "Cristina" and call her greeting.
+christina = Student.new("Christina")
+christina.learn
