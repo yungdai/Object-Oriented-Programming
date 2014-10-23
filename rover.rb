@@ -1,5 +1,6 @@
 class Rover
-  attr_reader :x, :y, :direction, :instructions
+  # These are attributes you want to read outside of the class
+  attr_accessor :x, :y, :direction
 
   # initialize the state of the Rover
   def initialize(x, y, direction)
@@ -7,10 +8,26 @@ class Rover
     @y = y.to_i
     @direction = direction.to_s
   end
+  # method for reading instructions
+  def read_instructions(instructions)
+    # do loop that takes each character from the instructions and then exectue the move
+    instructions.each_char do |instruction|
+      position
+      if instruction == "M"
+        move_forward
+      elsif instruction == "L"
+        turn_left
+      elsif instruction == "R"
+        turn_right
+      else
+        puts "Instruction not recognised!!"
+      end
+    end
+  end
 
   #  This is the expected formatted output
   def position
-    "#{@x} #{@y} #{@direction}"
+    puts "The Rover's current position is X=#{@x}, y= #{@y},facing #{@direction}"
   end
 
   # Instructions to tell the Rover how to move
@@ -36,7 +53,6 @@ class Rover
     else
       @direction = "N"
     end
-
   end
 
   def move_forward
@@ -51,13 +67,14 @@ class Rover
     end
   end
 
-  # method for reading instructions
-  def read_instruction(instructions)
-
-
-  end
 
 end
 
 
 rover1 = Rover.new(1, 2, "N")
+rover1.read_instructions("LMLMLMLMM")
+rover1.position
+
+rover2 = Rover.new(3, 3, "E")
+rover2.read_instructions("MMRMMRMRRM")
+rover2.position
