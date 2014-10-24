@@ -13,7 +13,7 @@ class Rover
 
   # method for reading instructions
   def read_instructions(instructions)
-    # do loop that takes each character from the instructions and then exectue the move
+    # do loop that takes each character from the instructions and then execute the move
     instructions.each_char do |instruction|
       if instruction == "M"
         #check to see if you're going to fall off a cliff before you move forward
@@ -28,12 +28,12 @@ class Rover
     end
   end
 
-  #  This is the expected formatted output
+  #  method for the position in the expected formatted output
   def position
     puts "The Rover's current position is x=#{@x}, y= #{@y}, facing #{@direction}"
   end
 
-  # Instructions to tell the Rover how to move
+  # methods for the Rover's movement abilities
   def turn_left
     if @direction == "N"
       @direction = "W"
