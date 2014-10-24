@@ -4,11 +4,11 @@ class Rover
 
   # initialize the state of the Rover
   def initialize(x, y, direction, plateau_x, plateau_y)
-    @x = x
-    @y = y
-    @direction = direction
-    @plateau_x = plateau_x
-    @plateau_y = plateau_y
+    @x = x.to_i
+    @y = y.to_i
+    @direction = direction.to_s
+    @plateau_x = plateau_x.to_i
+    @plateau_y = plateau_y.to_i
   end
 
   # method for reading instructions
