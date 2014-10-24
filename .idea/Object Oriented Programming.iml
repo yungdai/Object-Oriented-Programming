@@ -95,7 +95,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="rbenv: 2.1.2" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

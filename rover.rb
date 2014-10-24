@@ -1,12 +1,14 @@
 class Rover
   # These are attributes you want to read outside of the class
-  attr_accessor :x, :y, :direction
+  attr_accessor :x, :y, :direction, :plateau_x, :plateau_y
 
   # initialize the state of the Rover
-  def initialize(x, y, direction, plateau_, plateau_y)
+  def initialize(x, y, direction, plateau_x, plateau_y)
     @x = x
     @y = y
     @direction = direction
+    @plateau_x = plateau_x
+    @plateau_y = plateau_y
   end
 
   # method for reading instructions
@@ -14,7 +16,8 @@ class Rover
     # do loop that takes each character from the instructions and then exectue the move
     instructions.each_char do |instruction|
       if instruction == "M"
-        move_forward
+        #check to see if you're going to fall off a cliff before you move forward
+        plateau_check
       elsif instruction == "L"
         turn_left
       elsif instruction == "R"
@@ -27,7 +30,7 @@ class Rover
 
   #  This is the expected formatted output
   def position
-    puts "The Rover's current position is x=#{@x}, y= #{@y},facing #{@direction}"
+    puts "The Rover's current position is x=#{@x}, y= #{@y}, facing #{@direction}"
   end
 
   # Instructions to tell the Rover how to move
@@ -67,7 +70,16 @@ class Rover
     end
   end
 
-
+  # Checks with the plateau to make sure it doesn't fall of the cliff
+  def plateau_check
+    if @x < 0 || @x > @plateau_x
+      puts "Cannot move here, because it will be outside of the plateau"
+    elsif @y < 0 || @y > @plateau_y
+      puts "Cannot move here, because it will be outside of the plateau"
+    else
+      move_forward
+    end
+  end
 end
 
 
